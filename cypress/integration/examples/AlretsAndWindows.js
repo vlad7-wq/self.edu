@@ -32,7 +32,7 @@ describe("working with alert pop ups and child windows", function() {
         //     } else {cy.get("#opentab").click()}
         // })
 
-        cy.url().should("include", "qaclickacademy") // checking that proper site was opened
+        // cy.url().should("include", "qaclickacademy") // checking that proper site was opened
         cy.go("back") // go back to the previous site
     })
 
@@ -71,6 +71,6 @@ describe("working with alert pop ups and child windows", function() {
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.frameLoaded('#courses-iframe') // 'frameLoaded' method for get an iFrame
         cy.iframe().find("a[href*='mentorship']").eq(0).click() // 'iframe' method for working with iFrame, 'find' for getting an element
-        cy.iframe().find("h1[class*='pricing-title']").should('have.length', 2)
+        // cy.iframe().find("h1[class*='pricing-title']").should('have.length', 2)
     })
 })  

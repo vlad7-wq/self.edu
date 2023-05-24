@@ -22,7 +22,7 @@ describe("working with alert pop ups and child windows", function() {
     it("handling child window", function() {
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.get("#opentab").should("have.attr", "target", "_blank") // checking that specified attr have specified value
-        cy.get("#opentab").invoke("removeAttr", "target").click() // removing 'target' attr for opening document in the same window
+        // cy.get("#opentab").invoke("removeAttr", "target").click() // removing 'target' attr for opening document in the same window
         
         // example how to add condition if 'target' value different form '_blank'
         // cy.get("#opentab").then(() => {
